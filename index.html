@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Soporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets\img/logo.png" alt="Logo" class="logo">ChatEase</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Manuales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Calendario</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Organigrama</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row no-gutters">
+            <div class="col-12 col-md-4 col-lg-3 chat-sidebar">
+                <button class="btn btn-primary d-md-none btn-all" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#chatList" aria-expanded="false" aria-controls="chatList">
+                    Conversaciones
+                </button>
+                <div class="collapse d-md-block" id="chatList">
+                    <input type="text" class="form-control mb-3" placeholder="Buscar conversaciones">
+                    <ul class="list-group">
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-23T12:30:34"
+                            data-unread="true">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/johnwck.png" alt="John Wick" class="rounded-circle" width="40"
+                                        height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block font-weight-bold">John Wick</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">14:30</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-23T12:25:34"
+                            data-unread="true">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/ethanhunt.png" alt="Ethan Hunt" class="rounded-circle"
+                                        width="40" height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block font-weight-bold">Ethan Hunt</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">11:15</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-17T09:45:00"
+                            data-unread="false">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/jamesbond.png" alt="James Bond" class="rounded-circle"
+                                        width="40" height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block">James Bond</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">09:45</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-15T08:30:00"
+                            data-unread="false">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/natasha.png" alt="Natasha Romanoff" class="rounded-circle"
+                                        width="40" height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block">Natasha Romanoff</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">08:30</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-10T17:20:00"
+                            data-unread="false">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/aliceabb.png" alt="Alice Abernathy" class="rounded-circle"
+                                        width="40" height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block">Alice Abernathy</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">17:20</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-10T17:20:00"
+                            data-unread="false">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/darth.png" alt="Darth Vader" class="rounded-circle" width="40"
+                                        height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block">Darth Vader</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">17:20</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item chat-sidebar__item" data-last-message="2024-07-10T17:20:00"
+                            data-unread="false">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/img/harley.png" alt="Harley Quinn" class="rounded-circle"
+                                        width="40" height="40">
+                                    <div class="ms-2">
+                                        <span class="d-block">Harley Quinn</span>
+                                    </div>
+                                </div>
+                                <span class="chat-last-message-time text-muted">17:20</span>
+                            </div>
+                        </li>
+
+                        <!-- Más elementos de la lista -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9 chat-content">
+                <div class="chat-header d-flex align-items-center">
+                    <img src="/assets/img/chandler.png" id="user_photo" alt="Perfil" class="rounded-circle mr-3"
+                        width="50">
+                    <div class="user-info">
+                        <h5 class="mb-0">Chandler Bing</h5>
+                        <p class="chat-status">Activo hace 30 minutos</p>
+                    </div>
+                </div>
+                <div class="chat-messages">
+                    <div class="message message--received">
+                        <img src="/assets/img/chandler.png" alt="Perfil" class="message__user-image">
+                        <div class="message__bubble">Oiga, mi computadora no enciende. ¿Puede ayudarme?
+                            <span class="message__time">14:30</span>
+                        </div>
+                    </div>
+                    <div class="message message--sent">
+                        <img src="/assets/img/deadpool.png" alt="Perfil" class="message__user-image">
+                        <div class="message__bubble">Claro, pruebe a enchufarla.
+                            <span class="message__time">14:32</span>
+                        </div>
+                    </div>
+                    <div class="message message--received">
+                        <img src="/assets/img/chandler.png" alt="Perfil" class="message__user-image">
+                        <div class="message__bubble">¡Está enchufada! ¿Qué más puedo hacer señor soporte técnico?
+                            <span class="message__time">14:33</span>
+                        </div>                        
+                    </div>
+                    <div class="message message--sent">
+                        <img src="/assets/img/deadpool.png" alt="Perfil" class="message__user-image">
+                        <div class="message__bubble">Soporte técnico es para los débiles. Solucione solo... fuerza de
+                            voluntad.
+                            <span class="message__time">14:37</span>
+                        </div>                        
+                    </div>
+                    <div class="message message--received">
+                        <img src="/assets/img/chandler.png" alt="Perfil" class="message__user-image">
+                        <div class="message__bubble">Solucionado, muchas gracias
+                            <span class="message__time">14:40</span>
+                        </div>                       
+                    </div>
+                    <!-- Más mensajes -->
+                </div>
+                <div class="chat-input">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <button class="btn btn-primary dropdown-toggle btn-all" type="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-paperclip" style="color: #ffffff;"></i> <!-- Ícono de Font Awesome -->
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Imagen</a></li>
+                <li><a class="dropdown-item" href="#">Video</a></li>
+                <li><a class="dropdown-item" href="#">Documento</a></li>
+            </ul>
+        </div>
+        <input type="text" class="form-control" placeholder="Escribe un mensaje">
+        <div class="input-group-append">
+            <button class="btn btn-primary btn-all" type="button">Enviar</button>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e2a1c9b581.js" crossorigin="anonymous"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
