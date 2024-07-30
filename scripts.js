@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const nameSpan = item.querySelector('.ms-2 span');
         if (unread) {
             nameSpan.classList.add('font-weight-bold');
-            item.classList.add('unread'); // Añade la clase 'unread' para el fondo rojizo
+            item.classList.add('unread'); 
         }
 
         item.addEventListener('click', function() {
@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
             this.setAttribute('data-unread', 'false');
         });
 
-        // Si es uno de los dos primeros elementos, añadir la clase 'unread' y 'font-weight-bold'
+        
         if (index < 2) {
             nameSpan.classList.add('font-weight-bold');
             item.classList.add('unread');
         }
     });
 
-    // Asignar horas ficticias a los mensajes
+    
     const messages = document.querySelectorAll('.message');
     let hour = 14;
     let minute = 30;

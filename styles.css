@@ -15,11 +15,11 @@ body {
 }
 
 .navbar-custom {
-    background-color: #111010 !important; /* Cambia este valor por el color que desees */
+    background-color: #111010 !important;
 }
 
 .chat-container {
-    height: calc(100vh - 56px); /* Ajusta la altura excluyendo la altura de la navbar */
+    height: calc(100vh - 56px); 
     display: flex;
     flex-direction: column;
 }
@@ -146,34 +146,6 @@ body {
     margin-right: 0;
 }
 
-/*.message__time {
-    display: block;
-    font-size: 0.75rem;
-    color: #ffffff;
-    margin-top: 5px;
-    text-align: right;
-}
-
-.message--received .message__bubble {
-    background: #98c5b1;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 60%;
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.message--sent .message__bubble {
-    background: #2a3341;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: 0;
-}
-*/
-
 .chat-input {
     border-top: 1px solid #dee2e6;
     padding-top: 10px;
@@ -201,12 +173,12 @@ body {
 }
 
 .btn-all {
-    background-color: #191a1d; /* Cambia este valor por el color que desees */
-    border-color: #ffffff; /* Cambia este valor por el color que desees */
-    color: white; /* Cambia el color del ícono si es necesario */
+    background-color: #191a1d; 
+    border-color: #ffffff; 
+    color: white; 
 }
 
 .btn-all:hover {
-    background-color: #4d5155; /* Color al pasar el mouse por encima */
-    border-color: #000000; /* Color al pasar el mouse por encima */
+    background-color: #4d5155; 
+    border-color: #000000; 
 }
